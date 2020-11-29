@@ -1,0 +1,20 @@
+body {
+    background-color: #69D2E7; 
+}
+
+div.container4 {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+ }
+  div.container4 p {
+    font-family: Helvetica;
+    font-size: 128px;
+    background-color: #FA6900;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    border-radius: 25px;
+ }

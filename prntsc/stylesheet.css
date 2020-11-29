@@ -1,0 +1,44 @@
+
+body {
+
+    margin: 0 auto;
+    background-color: lightblue;
+    text-align: center;
+
+
+}
+
+#button {
+
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 36px;
+    transition: 0.4s;
+    font-family: 'Arial';   
+    height: 100px;
+    width: 400px;
+
+
+}
+
+#button:hover {
+
+    background-color: white; 
+    color: #4CAF50;
+
+}
+
+#title {
+
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 54px;
+    font-family: 'Arial';  
+    margin-right: auto;
+    margin-left: auto;
+}
+
