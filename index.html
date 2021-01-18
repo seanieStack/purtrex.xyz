@@ -51,7 +51,7 @@
   <div class="background-wrap">
     <!-- Video from https://www.youtube.com/watch?v=Vg9RJVaWGWc | $UICIDEBOY$ - Kill Yourself [ Part III ] // Attack On Titan AMV -->
     <!-- Song: Kill Yourself [ Part III ] | Artist: $UICIDEBOYS -->
-    <video id="video-bg-elem" controls muted preload="auto" autoplay="true" loop="loop">
+    <video id="video-bg-elem" controls muted="muted" preload="auto" autoplay="true" loop="loop">
     <source src="media/video.mp4" type="video/mp4">
     <source src="media/video.ogg" type="video/ogg">
     Video not supported
@@ -76,13 +76,13 @@
     var video=document.getElementById("video-bg-elem");
     if(video.muted){
       video.muted = false;
-      video.play();
+
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+document.body.addEventListener("click", function () {
     toggleMute();
-  }, false);
+})
 
   </script>
 
