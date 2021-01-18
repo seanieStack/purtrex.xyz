@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <title>Purtrex</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
+<!-- Template from https://github.com/ORI00 -->
+<html>
 
-        <meta charset="utf-8">
-        <meta name="description" content="Purtrex's Personal Website | Has some useful features such as random screenshots and a keyclick counter">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="purtrex">
-        <meta name="author" content="Purtrex">
+  <head>
 
-        <!-- ****** faviconit.com favicons ****** -->
-        <link rel="shortcut icon" href="/favicons/favicon.ico">
-        <link rel="icon" sizes="16x16 32x32 64x64" href="/favicons/favicon.ico">
-        <link rel="icon" type="image/png" sizes="196x196" href="/favicons/favicon-192.png">
-        <link rel="icon" type="image/png" sizes="160x160" href="/favicons/favicon-160.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96.png">
-        <link rel="icon" type="image/png" sizes="64x64" href="/favicons/favicon-64.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16.png">
-        <link rel="apple-touch-icon" href="/favicons/favicon-57.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/favicons/favicon-114.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/favicons/-72.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/favicons/-144.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/favicons/favicon-60.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicons/favicon-120.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/favicon-76.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicons/favicon-152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/-180.png">
-        <meta name="msapplication-TileColor" content="#FFFFFF">
-        <meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
-        <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-        <!-- ****** faviconit.com favicons ****** -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="media/ico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="./prntsc/index.html">Random Screenshots</a>
-            <a href="./keycounter/index.html">Keyclick Counter</a>
-            <a href="https://linktr.ee/purtrex" target="_blank">Socials</a>
-        </div>
-        <div class="main-page">
-            <div class="vert">
-                <div class="content">
-                    <h1>Purtrex</h1>
-                    <h3>Im Chilling</h3>
-                </div>
-            </div>
-        </div>
-    </body>
+    <script type="text/javascript">
+      //Animated Title
+      var msg  = document.title ="Purtrex";
+      var speed = 300;
+      var endChar = " ";
+      var pos = 0;
+
+      function moveTitle()
+      {
+            var ml = msg.length;
+              
+          title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+        document.title = title;
+          
+        pos++;
+        if (pos > ml) pos=0;
+        window.setTimeout("moveTitle()",speed);
+      }
+
+      moveTitle();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+  <div id="txt"></div>
+  <body>
+  <div class="background-wrap">
+    <!-- Video from https://www.youtube.com/watch?v=Vg9RJVaWGWc | $UICIDEBOY$ - Kill Yourself [ Part III ] // Attack On Titan AMV -->
+    <!-- Song: Kill Yourself [ Part III ] | Artist: $UICIDEBOYS -->
+    <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop">
+    <source src="media/video.mp4" type="video/mp4">
+    <source src="media/video.ogg" type="video/ogg">
+    Video not supported
+    </video>
+  </div>
+  <div class="content">
+
+    <h1>Purtrex</h1>
+
+    <p><a href="./projects/index.html" target="blank_" style="color: #ff0000">Projects Here</a></p>
+
+    <p><a href="https://github.com/seanieStack" target="blank_" style="color: #00F555">Check me out here!</a></p>
+
+  </div>
+
+  <script language="JavaScript">
+
+    var vid = document.getElementById("video-bg-elem");
+    vid.volume = 0.1;
+
+  </script>
+
+  </body>
+
 </html>

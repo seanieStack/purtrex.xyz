@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Purtrex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      //Animated Title
+      var msg = (document.title = "Purtrex");
+      var speed = 300;
+      var endChar = " ";
+      var pos = 0;
+
+      function moveTitle() {
+        var ml = msg.length;
+
+        title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+        document.title = title;
+
+        pos++;
+        if (pos > ml) pos = 0;
+        window.setTimeout("moveTitle()", speed);
+      }
+
+      moveTitle();
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../media/ico.ico" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Purtrex's Personal Website | Has some useful features such as random screenshots and a keyclick counter"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="purtrex" />
+    <meta name="author" content="Purtrex" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Purtrex</h1>
+    </div>
+    <div class="main-page">
+      <div class="vert">
+        <div class="content">
+          <a href="./prntsc/index.html">Random Screenshots</a>
+          <a href="./keycounter/index.html">Keyclick Counter</a>
+          <a href="https://linktr.ee/purtrex" target="_blank">Socials</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
